@@ -8,6 +8,7 @@ import java.time.Period;
         LocalDate birthDate;
         private double height;
         private double weight;
+
         public Defender(String firstName, String lastName, LocalDate birthDate, double height, double weight) {
             super(firstName, lastName, birthDate, height, weight);
         }
@@ -19,4 +20,3 @@ import java.time.Period;
                     ", Height: " + height + " cm, Weight: " + weight + " kg");
         }
     }
-}

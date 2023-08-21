@@ -7,6 +7,7 @@ import java.time.Period;
         LocalDate birthDate;
         private double height;
         private double weight;
+
         public Forward(String firstName, String lastName, LocalDate birthDate, double height, double weight) {
             super(firstName, lastName, birthDate, height, weight);
         }
@@ -17,5 +18,10 @@ import java.time.Period;
                     ", Age: " + Period.between(birthDate, LocalDate.now()).getYears() +
                     ", Height: " + height + " cm, Weight: " + weight + " kg");
         }
+
+        @Override
+        public String toString() {
+            return super.toString();
+        }
     }
-}
+

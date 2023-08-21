@@ -1,6 +1,5 @@
 package Interface;
 import java.time.LocalDate;
-import java.time.Period;
 
 interface SportsmanInfo {
     void displayInfo();

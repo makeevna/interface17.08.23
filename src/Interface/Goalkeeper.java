@@ -14,9 +14,28 @@ import java.time.Period;
         }
 
         @Override
-        public void displayInfo() {
-            System.out.println("Goalkeeper: " + firstName + " " + lastName +
-                    ", Age: " + Period.between(birthDate, LocalDate.now()).getYears() +
-                    ", Height: " + height + " cm, Weight: " + weight + " kg");
+        public String toString() {
+            final StringBuffer sb = new StringBuffer("Goalkeeper{");
+            sb.append("firstName='").append(firstName).append('\'');
+            sb.append(", lastName='").append(lastName).append('\'');
+            sb.append(", birthDate=").append(birthDate);
+            sb.append(", height=").append(height);
+            sb.append(", weight=").append(weight);
+            sb.append('}');
+            return sb.toString();
         }
+
+        @Override
+        public void displayInfo() {
+
+
+        }
+
+
+//        @Override
+//        public void displayInfo() {
+//            System.out.println("Goalkeeper: " + firstName + " " + lastName +
+//                    ", Age: " + Period.between(birthDate, LocalDate.now()).getYears() +
+//                    ", Height: " + height + " cm, Weight: " + weight + " kg");
+//        }
     }

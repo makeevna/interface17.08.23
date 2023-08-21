@@ -1,3 +1,6 @@
+interface Readable {
+    void read();
+}
 abstract class News {
     String name;
     int pages;
@@ -7,7 +10,8 @@ abstract class News {
         this.pages = pages;
     }
 
-    abstract void displayInfo();
+    public abstract void displayInfo();
+
 }
 
 
